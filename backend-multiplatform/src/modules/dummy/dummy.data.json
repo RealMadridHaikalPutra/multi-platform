@@ -1,0 +1,81 @@
+{
+  "products": [
+    {
+      "id": "b2c8a3c9-3f64-4a3c-9d0d-1f6f6f1b1a11",
+      "sku": "SKU-001",
+      "name": "Basic Tee",
+      "description": "Cotton tee for daily wear.",
+      "price": 50000,
+      "isActive": true,
+      "createdAt": "2026-04-20T08:00:00.000Z",
+      "updatedAt": "2026-04-20T08:00:00.000Z"
+    },
+    {
+      "id": "2d7b6f44-8b9e-4f8b-9d8b-0b8b3c6c2e22",
+      "sku": "SKU-002",
+      "name": "Black Hoodie",
+      "description": "Fleece hoodie with front pocket.",
+      "price": 150000,
+      "isActive": true,
+      "createdAt": "2026-04-20T09:00:00.000Z",
+      "updatedAt": "2026-04-20T09:00:00.000Z"
+    },
+    {
+      "id": "7a1d9f5a-6c2b-4b9b-8d2c-91b44d88aa33",
+      "sku": "SKU-003",
+      "name": "Canvas Cap",
+      "description": "Adjustable cap for daily use.",
+      "price": 65000,
+      "isActive": true,
+      "createdAt": "2026-04-20T10:00:00.000Z",
+      "updatedAt": "2026-04-20T10:00:00.000Z"
+    }
+  ],
+  "inventory": [
+    {
+      "id": "c5aa6c3a-8b74-4d22-9e4c-5b7d1d0c1a44",
+      "sku": "SKU-001",
+      "quantity": 48,
+      "reserved": 0,
+      "updatedAt": "2026-04-20T08:30:00.000Z"
+    },
+    {
+      "id": "d2c4d8d9-1a33-4a8b-8a9b-1d1a2d3c4e55",
+      "sku": "SKU-002",
+      "quantity": 30,
+      "reserved": 0,
+      "updatedAt": "2026-04-20T09:30:00.000Z"
+    },
+    {
+      "id": "e8f9a3b4-2c1d-4d9f-8d1b-0f7c9a6b5e66",
+      "sku": "SKU-003",
+      "quantity": 25,
+      "reserved": 0,
+      "updatedAt": "2026-04-20T10:30:00.000Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "a1b2c3d4-1111-4b5c-8d7e-9f0a1b2c3d4e",
+      "externalOrderId": "ORD-001",
+      "platform": "SHOPEE",
+      "sku": "SKU-001",
+      "quantity": 2,
+      "status": "PENDING",
+      "rawPayload": null,
+      "createdAt": "2026-04-21T06:00:00.000Z",
+      "updatedAt": "2026-04-21T06:00:00.000Z"
+    },
+    {
+      "id": "b2c3d4e5-2222-4c6d-8e7f-0a1b2c3d4e5f",
+      "externalOrderId": "ORD-002",
+      "platform": "TIKTOK",
+      "sku": "SKU-002",
+      "quantity": 1,
+      "status": "CONFIRMED",
+      "rawPayload": null,
+      "createdAt": "2026-04-21T07:00:00.000Z",
+      "updatedAt": "2026-04-21T07:00:00.000Z"
+    }
+  ]
+}
