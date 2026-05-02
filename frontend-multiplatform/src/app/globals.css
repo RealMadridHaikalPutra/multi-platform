@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  --bg-main: #eff4fb;
+  --bg-card: #ffffff;
+  --bg-muted: #f5f8fc;
+  --text-main: #0f172a;
+  --text-soft: #475569;
+  --line: #d6e0ec;
+  --brand: #2563eb;
+  --brand-soft: #dbeafe;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at 15% 8%, #dbeafe 0%, transparent 42%),
+    radial-gradient(circle at 85% 12%, #bfdbfe 0%, transparent 36%),
+    linear-gradient(180deg, #f8fbff 0%, #eef3fa 100%),
+    var(--bg-main);
+}
+
+::selection {
+  background: #bfdbfe;
+  color: #0f172a;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.card-shadow {
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.soft-panel {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(6px);
+}
+
+.fade-up {
+  animation: fade-up 0.5s ease both;
+}
+
+.page-wrap {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.input-clean {
+  width: 100%;
+  border-radius: 0.85rem;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  padding: 0.55rem 0.8rem;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.input-clean:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
